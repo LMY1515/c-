@@ -1,0 +1,45 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+enum Animal //仅仅是枚举出来了简单介绍 没有讲具体怎么用
+{
+	dog,
+	cat,
+	bird
+
+};
+
+int main()
+{//四个常量的试用
+	const int a = 10;//固定常变量
+	int b = 20;//一般变量
+	int sum = a + b;
+	printf("sum = %d\n", sum);
+	b = 10;
+    sum = a + b;
+	printf("sum = %d\n", sum);
+#define c 5//宏定义变量
+	char d[c] = { 'a', 'b', 'c', 'd', 'e' };
+	//数组[]中代表的是数组的元素个数
+	//每个元素序号从0123456开始
+    printf("%c\n", d[0]);
+	
+	enum Animal animal = dog;
+	printf("%d\n", dog);//每一个枚举常量对应一个数字 数字从0123开始
+	printf("%d\n", cat);
+	printf("%d\n", bird );
+	
+
+		
+//字符串和数组的运用、转义字符
+	//字符串
+	char arr1[] = "adfsa";
+	printf("%s\n", arr1);//用%s打印字符串
+	char arr2[4] = { 'a', 'b', 'c',0 };// []中的数字可写可不写，但写了就只能代表
+	//框内的元素个数，却并不能代表字符串的长度，因为0或\0不算长度，只做转义字符结束
+	//数组
+	int f[3] = { 2, 3, 4 };
+	printf("%s\n", arr2[2]);
+return 0;
+}
