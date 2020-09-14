@@ -1,0 +1,46 @@
+//循环语句，while 的试用
+//int main()
+//{
+//	
+//	int j = 1;
+//
+//	while (j < 1000)
+//	{
+//		printf("哈\n");//格式是  while（）括号中是变量的条件 {}这个是循环的命令
+//	j++;
+//	
+//}
+//	if (j >= 1000);
+//	printf("笑傻了\n");
+//	return 0;
+//}
+int main()//多次计算百万以下 通项为n  公差为1 的数列和
+{
+	int a = 0;
+	while (a < 1)
+	{
+
+		printf("请输入你求和数列末项\n");
+
+		long long  j = 1;
+		long long  k = 0;
+		long long  u = 0;
+
+		scanf("%d", &u);
+		while (j <= u)
+		{
+			k = k + j;
+
+			j = j + 1;
+
+		}
+
+		if (j > u);
+		printf("%d\n 是否继续计算？", k);
+
+		scanf("%d", &a);
+	}
+	if (a >= 1)
+		printf("计算结束\n");
+	return 0;
+}
