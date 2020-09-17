@@ -1,0 +1,74 @@
+int main()
+{
+	int a = 0; 
+	int b = 0;
+	int c = 0;
+	int e = 0;
+	while (e  < 1)
+	{
+
+		printf("请输入第一位数字\n");
+		scanf("%d", &a);
+		printf("请输入第二位数字\n");
+		scanf("%d", &b);
+		c = Add(a, b);
+		printf("结果=%d\n", c);
+		printf("是否继续计算\n");
+		scanf("%d", &e);
+	}
+	if (e >= 1);//不知道为什么不能用=0或者=1去判别是否继续
+	
+	printf("结束\n");
+	
+	return 0;
+}
+	数组的单独提取
+int main()
+{
+	char  a[5] = { ' a', 'd',' c',' b' ,0};
+	printf("%c\n", a[0]);
+//整型用d 字母用c 字符串用s 字符串定义内存用char
+	return 0;
+}
+
+	操作码 与或异或
+	赋值符号 和单目码
+
+作业：求两个函数的较大值
+int main()
+{
+	int a = 5;
+	int b = 6;
+	if (a > b)
+		printf("%d", a);
+	else
+		printf("%d", b);
+
+	return 0;
+}
+
+作业：写个函数求两个函数的较大值
+
+int com(int x, int y)
+{
+	int z;
+	if (x > y)
+		 z = x ;
+	else
+		 z = y;
+	return z;
+
+}
+
+
+int main()
+{
+	int a = 5;
+	int b = 6;
+	int c = 0;
+	c = com(a, b);
+		printf("%d\n", c );
+
+	return 0;
+
+}
